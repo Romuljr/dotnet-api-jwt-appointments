@@ -1,4 +1,5 @@
-﻿using API02.Domain.Entities;
+﻿using API02.CrossCutting.Cryptography;
+using API02.Domain.Entities;
 using API02.Infra.Contracts;
 using API02.Presentation.Models;
 using Microsoft.AspNetCore.Http;
@@ -27,7 +28,7 @@ namespace API02.Presentation.Controllers
                     Id = Guid.NewGuid(),
                     Nome = model.Nome,
                     Email = model.Email,
-                    Senha = model.Senha,
+                    Senha = MD5Cryptography.Encrypt(model.Senha),
                     DateCriacao = DateTime.Now
                 };
 

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\API02.CrossCutting.Cryptography\API02.CrossCutting.Cryptography.csproj" />
     <ProjectReference Include="..\API02.Domain\API02.Domain.csproj" />
     <ProjectReference Include="..\API02.Repository\API02.Infra.csproj" />
   </ItemGroup>

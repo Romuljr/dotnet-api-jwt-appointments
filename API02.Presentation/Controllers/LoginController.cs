@@ -1,4 +1,5 @@
-﻿using API02.Infra.Contracts;
+﻿using API02.CrossCutting.Cryptography;
+using API02.Infra.Contracts;
 using API02.Presentation.Configurations;
 using API02.Presentation.Models;
 using Microsoft.AspNetCore.Http;
@@ -17,7 +18,7 @@ namespace API02.Presentation.Controllers
         {
             try
             {
-                var usuario = usuarioRepository.Get(model.Email, model.Senha);
+                var usuario = usuarioRepository.Get(model.Email, MD5Cryptography.Encrypt(model.Senha));
 
                 if (usuario == null)
                 {

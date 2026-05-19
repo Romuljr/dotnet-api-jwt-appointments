@@ -20,6 +20,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. CrossCutting", "4. CrossCutting", "{A1A1C69D-48C2-4702-BFFA-D8220619457E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API02.CrossCutting.Cryptography", "API02.CrossCutting.Cryptography\API02.CrossCutting.Cryptography.csproj", "{BE6EDB9F-701B-43B9-9A2E-615AB717F4CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +42,10 @@ Global
 		{028E7BF7-2B29-4B94-A772-5AB79D2623BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{028E7BF7-2B29-4B94-A772-5AB79D2623BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{028E7BF7-2B29-4B94-A772-5AB79D2623BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6EDB9F-701B-43B9-9A2E-615AB717F4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE6EDB9F-701B-43B9-9A2E-615AB717F4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE6EDB9F-701B-43B9-9A2E-615AB717F4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6EDB9F-701B-43B9-9A2E-615AB717F4CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +54,7 @@ Global
 		{B9BEB88E-74A3-49B1-813B-A7D92A558693} = {6DF625BF-7413-4673-9426-A1EEFF4BD539}
 		{3FB4FF81-6A58-47A3-A6C8-C72491B9E985} = {F57A0C14-3869-4495-9A28-5B29EDB44C05}
 		{028E7BF7-2B29-4B94-A772-5AB79D2623BE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{BE6EDB9F-701B-43B9-9A2E-615AB717F4CC} = {A1A1C69D-48C2-4702-BFFA-D8220619457E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4D5D1773-C46A-4DBE-BF87-B1562A3A93A1}
