@@ -7,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 SwaggerConfiguration.AddSwagger(builder.Services);
 JwtConfiguration.AddJwt(builder.Services, builder.Configuration);
+CorsConfiguration.AddCors(builder.Services);
+
 
 builder.Services.AddControllers();
 
@@ -17,6 +19,8 @@ var app = builder.Build();
 SwaggerConfiguration.UseSwagger(app);
 
 app.UseRouting();
+
+CorsConfiguration.UseCors(app);
 
 app.UseAuthentication();
 app.UseAuthorization();

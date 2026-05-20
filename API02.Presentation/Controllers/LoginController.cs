@@ -22,7 +22,7 @@ namespace API02.Presentation.Controllers
 
                 if (usuario == null)
                 {
-                    return StatusCode(400, "Acesso Negado. Usuário inválido.");
+                    return StatusCode(401, new { Message = "Acesso Negado. Usuário inválido." });
                 }
 
                 return Ok
